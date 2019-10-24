@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<ActionBar [title]="title"></ActionBar>
+<StackLayout  class="p-20">
+        <RadListView [items]="['a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b','a','b']">
+            <ng-template tkListItemTemplate let-item="item">
+                <StackLayout orientation="vertical">
+                    <Label class="nameLabel" text="item.name"></Label>
+                </StackLayout>
+            </ng-template>
+        </RadListView>
+</StackLayout>
